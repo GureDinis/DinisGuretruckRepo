@@ -1,0 +1,36 @@
+.optionsContainer {
+  padding: 0 3px;
+  overflow: auto;
+  max-height: 95% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: left;
+  .option {
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+
+    h2 {
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      margin: 0 !important;
+      margin-left: 15px !important;
+    }
+    .doubleArrow {
+      color: white;
+      margin-left: auto;
+      margin-right: 40px;
+    }
+  }
+  .option:hover {
+    background-color: rgba(0, 4, 224, 0.1);
+  }
+}

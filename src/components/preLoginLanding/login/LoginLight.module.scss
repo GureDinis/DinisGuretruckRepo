@@ -1,0 +1,114 @@
+.verContainer {
+  margin-top: 30px;
+
+  label {
+    font-size: 11px;
+  }
+}
+
+.contaier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(245, 245, 245, 0.6);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 380px;
+  height: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginContainer {
+  width: 100%;
+}
+
+.contentHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+
+  span {
+    font-weight: 500;
+    font-size: 28px;
+  }
+}
+
+.boxContainer {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  width: 80%;
+  text-align: center;
+}
+
+.input {
+  height: 40px;
+  border-radius: 10px;
+  border-color: #fff;
+  background: #fff !important;
+}
+
+.input::placeholder {
+  color: #000;
+}
+
+.rememberMe {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  div,
+  a {
+    margin: 0 0 1px 0;
+  }
+}
+
+.aTags {
+  font-size: 13px;
+  color: #000;
+}
+
+.forgetPass {
+  margin-bottom: 24px;
+}
+
+.aTags:hover {
+  color: #009de0;
+  text-decoration: underline;
+}
+
+.submitBtn {
+  width: 100%;
+  border-radius: 10px;
+  background: #009de0;
+  height: 40px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .loginNav {
+    flex-direction: column;
+    gap: 10px;
+    top: 2%;
+  }
+
+  .contaier {
+    width: 95%;
+    top: 60%;
+    height: auto;
+    padding: 10px 0;
+  }
+}

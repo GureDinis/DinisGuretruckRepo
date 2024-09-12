@@ -1,0 +1,43 @@
+.videosContainer {
+  padding: 0 8px;
+  overflow: auto;
+  max-height: 95% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .video {
+    border-radius: 10px;
+    background: var(--main-bg);
+    backdrop-filter: blur(10px);
+    display: flex;
+    // justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+
+    img {
+      width: 60px;
+      height: 36px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      background: lightgray 50% / cover no-repeat;
+      margin-right: 10px;
+    }
+    h2 {
+      color: var(--main-text-color);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      margin: 0 !important;
+    }
+  }
+
+  .active {
+    background: linear-gradient(90deg, rgba(0, 157, 224, 0.8) -6.25%, rgba(48, 213, 200, 0.8) 106.41%);
+    backdrop-filter: blur(10px);
+  }
+}
+@media screen {
+}

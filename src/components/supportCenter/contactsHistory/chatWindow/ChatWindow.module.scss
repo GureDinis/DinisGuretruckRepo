@@ -1,0 +1,235 @@
+.chatContainer {
+  border-radius: 20px;
+  background: var(--main-card-bg);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.chatHead {
+  height: 10%;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  background: linear-gradient(270deg, #30d5c8 0%, #009de0 100%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  justify-content: space-between;
+
+  @mixin padding {
+    padding: 6px 18px;
+    border-color: transparent;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+  }
+  h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.32px;
+  }
+  .online {
+    @include padding();
+    background: #05b053;
+  }
+  .offline {
+    @include padding();
+    background: #a5a5a5;
+  }
+}
+
+.chatBody {
+  height: 80%;
+  padding: 27px 24px 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  @mixin mesaage {
+    padding: 14px;
+    border-radius: 20px;
+    max-width: 50%;
+    align-self: flex-start;
+  }
+
+  .supportReply {
+    display: flex;
+    justify-content: flex-start;
+    span {
+      color: var(--input-color);
+      background: var(--drop-down-bg);
+      @include mesaage();
+    }
+    .avatarContainer img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      margin-inline-end: 9px;
+    }
+  }
+  .date {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+  }
+  .userReply {
+    display: flex;
+    justify-content: flex-end;
+    span {
+      color: #fff;
+      background: #009de0;
+      @include mesaage();
+    }
+    .userInfo {
+      margin-inline-start: 9px;
+    }
+
+    .avatarContainer {
+      background: #009de0;
+      padding: 7px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.chatBody > :first-child {
+  margin-top: auto;
+}
+
+.welcomeMessage {
+  width: 290px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  img {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  div {
+    border-radius: 20px;
+    background: var(--drop-down-bg);
+    width: 100%;
+    color: var(--input-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 14px;
+    margin-top: -35px;
+  }
+}
+
+.chatFooter {
+  padding: 0 24px;
+  height: 10%;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  input {
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    background: var(--drop-down-bg);
+    color: var(--main-text-color);
+    padding: 12px 24px;
+  }
+
+  input::placeholder {
+    color: var(--main-text-color);
+    opacity: 50%;
+  }
+
+  input:focus-visible {
+    outline: 0;
+  }
+
+  div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    opacity: 50%;
+    position: absolute;
+    right: 30px;
+  }
+
+  .active {
+    opacity: 100%;
+  }
+}
+
+.onlineIndicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid 1px #ede8e8;
+
+  &.green {
+    background-color: #1d854a;
+  }
+  &.red {
+    background-color: #b5b5b5;
+  }
+}
+
+.leftSide {
+  display: flex;
+
+  .agentInfo {
+    margin-inline-start: 9px;
+  }
+}
+
+.groupDate {
+  text-align: center;
+  position: relative;
+  margin: 10px 0;
+
+  &::after {
+    content: ' ';
+    background-color: var(--drop-down-bg);
+    width: calc(100% + 48px);
+    height: 1px;
+    position: absolute;
+    left: -24px;
+    right: 0;
+    top: 8px;
+  }
+  span {
+    background: var(--drop-down-bg);
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: var(--input-color);
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    position: relative;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,53 @@
+.layout {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  background: var(--main-bg);
+}
+.layoutWrapper {
+  display: flex;
+  flex: auto;
+  min-width: 0;
+}
+.sideBar {
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  min-width: 0;
+  position: relative;
+}
+.navbar {
+  top: 0;
+  border-radius: 20px;
+  padding: 0px 17px;
+  position: sticky;
+  z-index: 9;
+  background: var(--main-bg);
+}
+
+.transparentNavbar {
+  background: transparent;
+}
+
+.iframe {
+  width: 100%;
+  border-radius: 16px;
+  border: none;
+}
+
+.iframeContainer {
+  margin: 0px 17px;
+  position: relative;
+  .fullScreenbtn {
+    position: absolute;
+    bottom: 4px;
+    right: 0px;
+    cursor: pointer;
+  }
+}

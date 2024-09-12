@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.breadCrumbs {
+  padding: 15px 0px 0px 25px;
+}
+
+.BCItem {
+  cursor: pointer;
+
+  span:nth-child(2) {
+    display: none;
+  }
+}

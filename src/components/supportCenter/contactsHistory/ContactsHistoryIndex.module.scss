@@ -1,0 +1,26 @@
+.contactsHistoryContainer {
+  margin: 0 17px;
+  height: 90.5%;
+}
+
+.historyBody {
+  height: 80dvh;
+  padding-top: 1rem;
+}
+
+.back {
+  cursor: pointer;
+}
+
+:global .contact-history {
+  @media (max-width: 1366px) {
+    .ant-col-xl-9 {
+      flex: 0 0 45% !important;
+      max-width: 45% !important;
+    }
+    .ant-col-xl-15 {
+      flex: 0 0 55% !important;
+      max-width: 55% !important;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@mixin card-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainHeader {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0 17px 0;
+  color: var(--main-text-color);
+}
+
+.mainHeader::after {
+  content: '';
+  display: block;
+  height: 0.125rem;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin: 1% 0;
+}
+
+.mainNumbersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 17px 20px;
+  color: var(--main-text-color);
+  h2 {
+    margin: 0;
+  }
+}
+
+.prepaidCards {
+  height: 100%;
+}
+
+.sectionBody {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+
+.prePaidExtraInfo {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.analyticsCard {
+  @include card-style;
+  width: 29.5%;
+}
+
+.analyticsBrasil {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 66.5%;
+}
+
+.activeCards {
+  @include card-style;
+  width: 29.5%;
+}
+
+.legalServicesCard {
+  @include card-style;
+  width: 32%;
+}
+
+.vatSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.IMI {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 14px 0;
+  img {
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 50px;
+  }
+  div {
+    font-size: 25px;
+    font-weight: 700;
+    color: #009de0;
+  }
+}

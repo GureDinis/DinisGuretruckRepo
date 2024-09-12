@@ -1,0 +1,100 @@
+.slide {
+  background: var(--main-card-bg);
+  height: 6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+
+  .slideLeft {
+    display: flex;
+    align-items: center;
+    max-width: 75%;
+  }
+  .brandInfo {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 1.25rem;
+    h2 {
+      color: var(--label-color);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.03rem;
+      margin: 0;
+    }
+    a {
+      color: #009de0;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.02rem;
+      text-decoration-line: underline;
+      margin: 0;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.02rem;
+      color: var(--secondary-text-color);
+      margin: 0;
+    }
+  }
+  .logo {
+    width: 5rem;
+    height: 5rem;
+  }
+  .slideBtn {
+    color: #009de0;
+    font-size: 0.9375rem;
+    letter-spacing: 0.01875rem;
+    background: var(--secondary-btn-bg);
+    border-radius: 0.625rem;
+    border: 1px solid #009de0;
+    padding: 0.5rem 1.2rem;
+    width: unset;
+    cursor: pointer;
+  }
+}
+
+:global .clients-modal {
+  .ant-modal-content {
+    border-radius: 1.25rem;
+    background: var(--main-bg);
+    backdrop-filter: blur(30px);
+    color: #fff;
+  }
+  .ant-modal-close {
+    top: 22px;
+    right: 25px;
+    width: 1.7rem;
+    height: 1.7rem;
+    flex-shrink: 0;
+    background: var(--main-card-bg);
+    border-radius: 100%;
+    color: var(--label-color);
+
+    &:hover {
+      background: var(--main-card-bg);
+      border-radius: 100%;
+      color: var(--label-color);
+    }
+  }
+  .ant-modal-header {
+    background-color: unset;
+    color: inherit;
+    margin-bottom: 0.85rem;
+  }
+  .ant-modal-title {
+    background-color: inherit;
+    color: inherit;
+    color: var(--label-color);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03125rem;
+    border-bottom: solid 2px #fff;
+    padding-bottom: 10px;
+  }
+}

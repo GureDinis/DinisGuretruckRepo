@@ -1,0 +1,15 @@
+.uploadBtn {
+  border: 0;
+  background: none;
+  width: unset;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.uploadedImg {
+  width: 95%;
+  height: 95%;
+  border-radius: 100%;
+}

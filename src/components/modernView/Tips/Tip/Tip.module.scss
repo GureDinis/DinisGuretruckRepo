@@ -1,0 +1,37 @@
+.tipContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tipPhoto {
+  width: 1000px;
+  height: 423px;
+  margin-bottom: 16px !important;
+}
+
+.tipHeading {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.tipContent {
+  color: #707070;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}

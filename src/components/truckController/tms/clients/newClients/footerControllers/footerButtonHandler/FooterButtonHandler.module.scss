@@ -1,0 +1,30 @@
+.discardButton {
+  margin-left: auto;
+  border: 1px solid rgba(0, 157, 224, 1.5);
+  border-radius: 20px;
+  font-size: medium;
+  padding: 10px 25px 10px 25px;
+  letter-spacing: 1px;
+  color: rgba(0, 157, 224, 1.5);
+  cursor: pointer;
+}
+
+.saveButton {
+  background: linear-gradient(90deg, rgba(0, 157, 224, 0.8) -6.25%, rgba(48, 213, 200, 0.8) 106.41%);
+  border-radius: 20px;
+  font-size: medium;
+  padding: 10px 25px 10px 25px;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+}
+
+.discardButton:hover {
+  background-color: rgba(0, 157, 224, 0.1);
+}
+
+.saveButton:hover {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 157, 224, 0.5);
+  color: black;
+}

@@ -1,0 +1,44 @@
+.customSelect {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.selectedOption {
+  background-color: white;
+  border: 2px solid;
+  border-image-slice: 1;
+  padding: 10px;
+  border-radius: 8px;
+  color: rgba(0, 157, 224, 0.8);
+  transition: all 0.3s ease;
+}
+
+.optionsContainer {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(0, 157, 224, 0.5);
+  border-radius: 8px;
+  z-index: 100;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 10px;
+  transition: background-color 0.2s;
+  color: rgba(0, 157, 224, 0.8);
+}
+
+.option:hover {
+  background-color: rgba(0, 157, 224, 0.1);
+}
+
+.option.selected {
+  background-color: rgba(0, 157, 224, 0.2);
+}

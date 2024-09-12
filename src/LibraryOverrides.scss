@@ -1,0 +1,102 @@
+.ant-collapse-header {
+  flex-direction: row-reverse;
+  align-items: center !important;
+}
+.ant-collapse-item {
+  border: none !important;
+}
+
+.ant-modal-content {
+  border-radius: 20px !important;
+}
+
+.custom-modal .ant-modal-body {
+  overflow: hidden;
+}
+
+.ant-modal-wrap {
+  backdrop-filter: blur(10px);
+}
+.ant-list-item-meta {
+  align-items: center !important;
+}
+.ant-list-item {
+  padding: 5px 0 !important;
+}
+.slick-arrow {
+  width: 20px !important;
+  height: 20px !important;
+}
+.slick-prev {
+  left: -10px !important;
+  z-index: 10 !important;
+}
+.slick-next {
+  right: -10px !important;
+  z-index: 10 !important;
+}
+
+.mainNumbers .recharts-cartesian-axis-line {
+  stroke: var(--main-text-color) !important;
+}
+
+.mainNumbers .recharts-text {
+  fill: var(--main-text-color);
+  font-size: 9px;
+}
+
+.mainNumbers .recharts-tooltip-wrapper-top,
+.mainNumbers .recharts-tooltip-wrapper-bottom {
+  color: #000 !important;
+  z-index: 9999;
+}
+.ant-menu-submenu-arrow {
+  color: var(--main-text-color) !important;
+}
+
+.mainNumbers .recharts-tooltip-item-value {
+  float: right;
+}
+
+.ant-typography {
+  color: var(--main-text-color);
+}
+
+.pagination {
+  .ant-select-dropdown .ant-select-item-option {
+    color: var(--main-text-color) !important;
+  }
+
+  .ant-select-dropdown {
+    background: var(--drop-down-bg) !important;
+    width: 65px !important;
+    min-width: 60px !important;
+    text-align: center;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    .ant-select-item-option-selected {
+      color: #000 !important;
+    }
+  }
+  .ant-pagination {
+    color: var(--main-text-color) !important;
+  }
+  .ant-pagination .ant-pagination-item {
+    color: var(--main-text-color) !important;
+    background-color: var(--main-card-bg) !important;
+  }
+  .ant-select-single .ant-select-selector .ant-select-selection-item {
+    line-height: 39px !important;
+  }
+  .ant-space-item,
+  .ant-select-selection-item,
+  .ant-select-arrow,
+  .ant-pagination-item a,
+  .ant-pagination-item-ellipsis,
+  .anticon {
+    color: var(--main-text-color) !important;
+  }
+  .custom-select .ant-select-arrow {
+    transform: rotate(180deg);
+  }
+}

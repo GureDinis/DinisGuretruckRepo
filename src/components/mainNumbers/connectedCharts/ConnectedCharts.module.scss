@@ -1,0 +1,62 @@
+.chartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 14px;
+  width: 100%;
+  height: 75%;
+}
+
+.yAxisTic {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 20px;
+  gap: 40px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 9px;
+    color: (var(--main-text-color));
+  }
+}
+
+.customeToolTip {
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0.5px solid #e2e2e2;
+}
+
+.legend {
+  display: flex;
+  color: var(--main-text-color);
+  padding: 5px 0px 20px;
+  gap: 15px;
+}
+
+.legendItemContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legendIndicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+}
+
+.legendItem {
+  font-size: 10px;
+}
+
+.bar {
+  background: #e2e2e2;
+}
+
+.real {
+  background: red;
+}

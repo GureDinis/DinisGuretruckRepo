@@ -1,0 +1,115 @@
+.navContainer {
+  background-color: var(--nav-backGround-color);
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e2e2e2;
+  position: relative;
+}
+
+.navGroup {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 0 13px;
+
+  a {
+    color: var(--label-color);
+    text-decoration: none;
+  }
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.userInfo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--label-color);
+}
+
+.logOut {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--label-color);
+  cursor: pointer;
+}
+
+.popOverContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--label-color);
+}
+
+.popOverItem {
+  display: flex;
+  gap: 5px;
+}
+
+.popOverTitle {
+  color: var(--label-color);
+}
+
+.collapsedMenu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  z-index: 1;
+  background: white;
+
+  .collapse {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: transparent;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  .collapsedPanel {
+    border-radius: 10px;
+    background: #e2e2e2;
+
+    ul li {
+      height: auto !important;
+      padding-inline: 0 !important;
+      white-space: normal;
+    }
+  }
+  .panelHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.mobileLogo {
+  width: 170px;
+  height: 37px;
+}
+.active {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+  }
+}

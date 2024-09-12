@@ -1,0 +1,17 @@
+.notificationsHitory {
+  margin: 0 17px;
+  .notificationsHeader {
+    height: auto !important;
+  }
+  .notificationsContainer {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 1rem 0;
+    .notification {
+      border-radius: 10px;
+      background: var(--main-card-bg);
+      cursor: pointer;
+    }
+  }
+}

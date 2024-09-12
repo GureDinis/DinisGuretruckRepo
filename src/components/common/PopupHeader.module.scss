@@ -1,0 +1,38 @@
+.popupHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header {
+    color: var(--main-text-color);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin: 0 !important;
+  }
+  .option {
+    color: #009de0;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.34px;
+    margin: 0 !important;
+    cursor: pointer;
+  }
+  .hr {
+    border-radius: 10px;
+    background: #fff;
+    height: 2px;
+    width: 100%;
+    border: none;
+    margin-bottom: 5px;
+  }
+}

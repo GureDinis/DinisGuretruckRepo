@@ -1,0 +1,222 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(245, 245, 245, 0.6);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 380px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  gap: 15px;
+  h3 {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.12px;
+    margin: 0 !important;
+  }
+
+  h4 {
+    color: #292d32;
+    font-family: 'Playfair Display';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 !important;
+  }
+  h2 {
+    margin: 0 !important;
+    color: #292d32;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.56px;
+  }
+  p {
+    margin: 0 !important;
+    color: #292d32;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.24px;
+  }
+}
+
+@media only screen and (max-height: 844px) and (max-width: 844px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(245, 245, 245, 0.6);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 380px;
+    height: 411px;
+    top: 70%;
+    left: 69%;
+    transform: translate(-70%, -70%);
+  }
+}
+
+.loginContainer {
+  width: 100%;
+}
+
+.contentHead {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.boxContainer {
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  width: 80%;
+  text-align: center;
+}
+
+.form {
+  label {
+    color: #fff;
+  }
+
+  input::placeholder {
+    color: #000;
+  }
+
+  .input {
+    height: 40px;
+    color: #000;
+    background: #fff !important;
+    border-color: rgb(21 21 21 / 18%);
+    border-radius: 10px;
+  }
+}
+
+.aTags {
+  color: #009de0;
+}
+
+.aTags:hover {
+  color: #4096ff;
+}
+
+.submitBtn {
+  width: 100%;
+  border-radius: 80px;
+  background: #009de0;
+}
+
+.cancelBtn {
+  width: 100%;
+  border-radius: 80px;
+  background: transparent;
+  border-color: #009de0;
+  color: #009de0;
+}
+
+.cancelBtn:hover {
+  background: #a1a1a1 !important;
+  border-color: transparent !important;
+  color: #000 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+}
+.forgetPasswordContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .recoverAccountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .recoverAccountOptions {
+      display: flex;
+      gap: 20px;
+      .recoverAccountOption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 13px 25px;
+        border-radius: 10px;
+        gap: 7px;
+        cursor: pointer;
+        img {
+          width: 30px;
+          height: 30px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  width: 100%;
+}
+.nextBtn {
+  width: 100%;
+  background-color: #009de0;
+  border-radius: 80px;
+}
+.emailInput {
+  border-radius: 10px;
+  height: 38px;
+}
+.otpInput {
+  width: 38px !important;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.otpInput:focus {
+  border-color: #009de0;
+  box-shadow: 0 0 0 2px rgba(0, 157, 224, 0.2);
+  outline: none;
+}
+
+.recoverContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.accountsList {
+  border-radius: 10px;
+  background: #fff;
+  width: 100%;
+  padding: 5px 10px;
+}
+.resend {
+  cursor: pointer;
+  color: #009de0 !important;
+}

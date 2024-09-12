@@ -1,0 +1,209 @@
+.calendarWrapper {
+  padding-inline-start: 1rem;
+  height: 100%;
+}
+.rbc-row-content {
+  z-index: 2;
+  margin: 0;
+}
+.rbc-month-view {
+  border-radius: 1.25rem;
+  background: var(--main-card-bg);
+  backdrop-filter: blur(30px);
+  color: var(--label-color);
+  border: none;
+}
+.rbc-header {
+  padding: 1rem;
+  border-bottom: solid 0.125rem #f5f5f5;
+  span {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+  }
+}
+.rbc-off-range-bg,
+.rbc-today {
+  background-color: transparent;
+}
+.rbc-month-row {
+  overflow: unset;
+}
+.rbc-month-row + .rbc-month-row {
+  border: none;
+}
+.rbc-day-bg + .rbc-day-bg {
+  border-left: none;
+}
+.rbc-header + .rbc-header {
+  border-left: none;
+}
+.rbc-date-cell {
+  text-align: center;
+  //padding: 1rem 2.5rem 0 2.5rem;
+
+  button {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+  }
+}
+.rbc-off-range .rbc-button-link {
+  color: #a5a5a5;
+  font-weight: 300;
+}
+.rbc-event {
+  padding: 0.2rem 1rem;
+  margin: 0.15rem 0;
+  //margin-inline-start: 2rem;
+  font-size: 0.75rem;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+.rbc-event-continues-prior {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rbc-event-continues-after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rbc-row-segment {
+  padding: 0 7px 1px 1px;
+}
+
+.events-modal {
+  .ant-modal-content {
+    border-radius: 1.25rem;
+    background: var(--main-bg);
+    backdrop-filter: blur(30px);
+    color: var(--label-color);
+  }
+  .ant-modal-close {
+    top: 22px;
+    right: 25px;
+    width: 1.7rem;
+    height: 1.7rem;
+    flex-shrink: 0;
+    background: var(--main-card-bg);
+    border-radius: 100%;
+    color: var(--label-color);
+
+    &:hover {
+      background: var(--main-card-bg);
+      border-radius: 100%;
+      color: var(--label-color);
+    }
+  }
+  .ant-modal-header {
+    background-color: unset;
+    color: inherit;
+    margin-bottom: 0.85rem;
+  }
+  .ant-modal-title {
+    background-color: inherit;
+    color: inherit;
+    color: var(--label-color);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03125rem;
+    border-bottom: solid 2px #fff;
+    padding-bottom: 10px;
+  }
+  .ant-collapse {
+    border: none;
+  }
+  .ant-collapse-header {
+    flex-direction: row-reverse;
+    .ant-collapse-expand-icon {
+      padding: 0 !important;
+      color: #292d32;
+
+      .ant-collapse-arrow {
+        font-size: 1rem;
+        color: var(--label-color);
+      }
+      svg {
+        transform: rotate(90deg);
+        font: 1rem;
+      }
+    }
+  }
+  .collapse-custom-header {
+    display: flex;
+    align-items: center;
+    img {
+      width: 1.3125rem;
+      height: 1rem;
+    }
+    h3 {
+      color: var(--label-color);
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.0225rem;
+      margin: 0;
+      padding-inline-start: 0.5rem;
+    }
+  }
+  .ant-collapse-content {
+    border: none;
+    &.ant-collapse-content-active {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        border-bottom: 2px solid #292d32;
+        width: 95%;
+        transform: translateX(-50%);
+        top: 0;
+        left: 50%;
+      }
+    }
+  }
+  .ant-collapse-item {
+    border-radius: 1.25rem !important;
+    background: var(--main-card-bg);
+    border: none;
+    margin-bottom: 0.35rem;
+    color: var(--label-color);
+  }
+  .ant-collapse-content {
+    background: unset;
+  }
+  .ant-collapse-item-active {
+    .ant-collapse-header {
+      .ant-collapse-expand-icon svg {
+        transform: rotate(-90deg) !important;
+      }
+    }
+  }
+}
+
+.event-wrapper {
+  color: var(--label-color);
+  font-size: 0.875rem;
+  letter-spacing: 0.0175rem;
+  font-weight: 600;
+
+  .event-info {
+    display: flex;
+    .event-record {
+      flex-basis: 33.3%;
+    }
+  }
+
+  .event-details {
+    margin-top: 1.25rem;
+  }
+}

@@ -1,0 +1,17 @@
+.iframeContainer {
+  width: 100%;
+  border: none;
+  height: 80dvh;
+  border-radius: 20px;
+}
+
+:global .notificationModal {
+  .ant-modal-content {
+    padding: 0;
+    border-radius: 20px;
+  }
+  .ant-modal-close {
+    top: 20px;
+    right: 34px;
+  }
+}

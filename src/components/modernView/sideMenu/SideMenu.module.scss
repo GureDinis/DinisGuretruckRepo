@@ -1,0 +1,85 @@
+.sideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--main-color);
+  overflow: auto;
+  margin: 20px 0 20px 20px;
+  padding-top: 25px;
+  border-radius: 16px;
+  z-index: 30;
+  position: sticky;
+}
+.submenuContent {
+  position: fixed;
+  z-index: 30;
+}
+
+.menuItem {
+  span {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.leftMenuContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemLabel {
+  display: inline-block;
+  line-height: 20px;
+  margin: 0 3px 0 0 !important;
+  max-width: 25ch !important;
+  overflow: hidden;
+  color: var(--main-text-color);
+}
+
+.leftMenuItem {
+  display: flex !important;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftMenuInfo {
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon {
+  cursor: pointer;
+
+  img {
+    margin-left: 30px;
+  }
+}
+
+.menuImg {
+  height: 50px !important;
+  width: 50px !important;
+  min-width: 50px !important;
+  margin-right: 20px;
+}
+.disabled {
+  cursor: help !important;
+}
+
+.imgDisabled {
+  filter: grayscale(100%);
+}
+
+.labelDisabled {
+  color: #707070;
+}
+
+.hide {
+  display: none;
+  transition: all 0.3s;
+}
+
+.redText {
+  color: red;
+}

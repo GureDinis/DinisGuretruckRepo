@@ -1,0 +1,61 @@
+.secondaryHeader {
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03125rem;
+  margin: 0;
+  color: var(--label-color);
+  padding: 10px 0;
+}
+.countriesList {
+  border-radius: 1.25rem;
+  background: var(--main-card-bg);
+  list-style-type: none;
+  padding: 0.75rem 1.5rem;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  margin: 0;
+  &::-webkit-scrollbar-track-piece:start {
+    margin-top: 1rem;
+  }
+  &::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+.countryList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem; /* 162.5% */
+  letter-spacing: 0.02rem;
+  margin-bottom: 0.38rem;
+  cursor: pointer;
+  padding: 0.25rem 0.65rem;
+  transition: all 0.5s;
+  color: var(--label-color);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.countryListSelected {
+  border-radius: 1.25rem;
+  background: rgba(0, 157, 224, 0.5);
+  color: #fff;
+}
+.country {
+  display: flex;
+  align-items: center;
+}
+.flag {
+  width: 1.25rem;
+  height: 0.9375rem;
+  margin-inline-end: 0.88rem;
+}

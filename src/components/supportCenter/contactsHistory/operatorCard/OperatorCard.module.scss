@@ -1,0 +1,124 @@
+.operator {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.operatorCard {
+  border-radius: 20px;
+  background: var(--main-card-bg);
+  position: absolute;
+  overflow: hidden;
+  left: 65px;
+  min-height: 110px;
+  width: calc(100% - 65px);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 1px solid #30d5c8;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px 0;
+  color: var(--main-text-color);
+  background: linear-gradient(270deg, #30d5c8 0%, #009de0 100%);
+  overflow: hidden;
+
+  span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.28px;
+    margin-inline-start: 65px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.contact {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+
+  button {
+    border-radius: 20px;
+    background: linear-gradient(90deg, #009de0 -23.83%, #30d5c8 112.62%);
+    border: none;
+    padding: 6px 18px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+
+    &.offline {
+      background: #b5b5b5;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    button {
+      padding: 6px 8px;
+    }
+  }
+}
+
+.supportLanguages {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.3rem;
+  padding-inline-start: 38px;
+  align-items: start;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(0, 157, 224, 0.2) 0%, rgba(48, 213, 200, 0.2) 100%);
+  padding: 7px;
+  color: var(--input-color);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+
+  img {
+    width: 17px;
+    height: 12px;
+    margin-inline-end: 3px;
+  }
+}
+
+.OperatorImg {
+  width: 110px;
+  height: 110px;
+  border: solid 7px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+
+  &.offline {
+    border-color: #b5b5b5;
+  }
+
+  &.online {
+    border-color: #24a65c;
+  }
+}
+
+.OperatorInfo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  padding: 9px 5px 9px 10px;
+}
+
+:global .support-center .ant-card-body,
+:global .contact-history .ant-card-body {
+  padding: 0;
+}

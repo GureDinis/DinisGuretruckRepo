@@ -1,0 +1,84 @@
+.selectDark {
+  width: 100%;
+}
+
+.langContainer {
+  width: 250px;
+  height: 36px;
+  border-radius: 40px !important;
+  background: rgba(18, 18, 18, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .loginNav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 50%;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  .loginNav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40%;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .loginNav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30%;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .langContainer {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px) {
+  .loginNav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+  .langContainer {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) and (max-height: 844px) {
+  .loginNav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  .langContainer {
+    margin-top: 7px;
+  }
+}
